@@ -1,0 +1,71 @@
+<Project>
+  <Name>Sin titulo</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Sin titulo</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Address</Name>
+        <Access>Public</Access>
+        <Location left="700" top="261" />
+        <Size width="251" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int id { get; set; }</Member>
+        <Member type="Property">public Region region { get; set; }</Member>
+        <Member type="Property">public Territory territory { get; set; }</Member>
+        <Member type="Property">public string street { get; set; }</Member>
+        <Member type="Property">public int corner1 { get; set; }</Member>
+        <Member type="Property">public string corner2 { get; set; }</Member>
+        <Member type="Property">public string number { get; set; }</Member>
+        <Member type="Property">public string additionalData { get; set; }</Member>
+        <Member type="Property">public float lat { get; set; }</Member>
+        <Member type="Property">public float lat { get; set; }</Member>
+        <Member type="Property">public string description { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Region</Name>
+        <Access>Public</Access>
+        <Location left="320" top="261" />
+        <Size width="215" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int id { get; set; }</Member>
+        <Member type="Property">public string name { get; set; }</Member>
+        <Member type="Property">public Region parentRegion { get; set; }</Member>
+        <Member type="Property">public string geoRegion { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <Label>region</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>675</X>
+          <Y>355</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>*..1</StartMultiplicity>
+        <EndMultiplicity>1..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>422</X>
+          <Y>504</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>359</X>
+          <Y>504</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
